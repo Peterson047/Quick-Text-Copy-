@@ -12,37 +12,51 @@
   <h1 id="logo"><img src="/Outback-logo.png" width="200px" alt=""></h1>
   <div class="container">
     <h2 class="subtitulo" id="basic-text">Mensagem Pedido enviado</h2>
-    <textarea disabled
-      class="code half">G'day! obrigado por escolher o Outback! Seu pedido acabou de ser enviado!</textarea>
+    <textarea disabled class="code half">Olá! Seu pedido acabou de sair para entrega. 
+      Aproveite o seu #MomentoOutback e aguardamos sua avaliacão 5 estrelas!
+      Em breve entraremos em contato por telefone para colher seu feedback. 
+      Obrigado! 😄
+      </textarea>
     <div class="half">
       <button data-test="init-basic-text">Copiar Texto</button>
     </div>
   </div>
   <hr>
   <div class="container">
-    <h2 class="subtitulo" id="multiline-text">Agradecimento</h2>
+    <h2 class="subtitulo" id="multiline-text">Resposta avaliação positiva 1</h2>
     <textarea disabled class="code half">
-Muito obrigado por escolher o Outback</textarea>
+      G'day, XXXXX!
+      Cuidamos de todos os detalhes com muita dedicação para que você consiga vivenciar a melhor experiência com nosso delivery. 
+      Sempre que quiser um #MomentoOutback, lembre-se que estamos por aqui!
+      Abraços, equipe Outback Sorocaba 😄. 
+      </textarea>
     <div class="half">
       <button data-test="init-multiline-text">Copiar Texto</button>
     </div>
   </div>
   <hr>
   <div class="container">
-    <h2 class="subtitulo" id="multiline-markup">Outros</h2>
+    <h2 class="subtitulo" id="multiline-markup">Resposta avaliacão positiva 2</h2>
     <textarea disabled class="code half">
-     ainda não definido
+      G'day, XXXXX!
+      Ficamos felizes que você gostou! :) 
+      Sempre que quiser viver um novo #MomentoOutback, lembre-se que estamos por aqui:)
+      Abraços, equipe Outback Sorocaba 😄. 
+      
     </textarea>
     <div class="half">
       <button data-test="init-markup-text">Copiar texto</button>
     </div>
   </div>
+
+  <hr>
+
   <hr>
   <script src="./index.js"></script>
   <script>
     document.querySelector('#basic-text ~ .half button')
       .addEventListener('click', function () {
-        copyToClipboard("G'day! obrigado por escolher o outback! Seu pedido acabou de ser enviado!")
+        copyToClipboard("Olá! Seu pedido acabou de sair para entrega. Aproveite o seu #MomentoOutback e aguardamos sua avaliacão 5 estrelas! Em breve entraremos em contato por telefone para colher seu feedback. Obrigado! 😄")
       });
     (function () {
       var multilineContainer = document.querySelector('#multiline-text + textarea');

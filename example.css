@@ -32,13 +32,16 @@ dt, dd, blockquote, address {
 }
 .code {
   font-size: 18px;
-  min-height: 80px;
+  min-height: 155px;
+  background-color: #d6d6d6;
+  
 }
 #logo {
   margin-bottom: 15px;
  text-align: center;
 }
 .subtitulo{
+  margin-top: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #683205;
   color: #fff;

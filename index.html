@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Copiar-colar</title>
+  <link rel="stylesheet" href="example.css">
+
+</head>
+
+<body>
+  <h1 id="logo"><img src="/Outback-logo.png" width="200px" alt=""></h1>
+  <div class="container">
+    <h2 class="subtitulo" id="basic-text">Mensagem Pedido enviado</h2>
+    <textarea disabled
+      class="code half">G'day! obrigado por escolher o Outback! Seu pedido acabou de ser enviado!</textarea>
+    <div class="half">
+      <button data-test="init-basic-text">Copiar Texto</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h2 class="subtitulo" id="multiline-text">Agradecimento</h2>
+    <textarea disabled class="code half">
+Muito obrigado por escolher o Outback</textarea>
+    <div class="half">
+      <button data-test="init-multiline-text">Copiar Texto</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h2 class="subtitulo" id="multiline-markup">Outros</h2>
+    <textarea disabled class="code half">
+     ainda não definido
+    </textarea>
+    <div class="half">
+      <button data-test="init-markup-text">Copiar texto</button>
+    </div>
+  </div>
+  <hr>
+  <script src="./index.js"></script>
+  <script>
+    document.querySelector('#basic-text ~ .half button')
+      .addEventListener('click', function () {
+        copyToClipboard("G'day! obrigado por escolher o outback! Seu pedido acabou de ser enviado!")
+      });
+    (function () {
+      var multilineContainer = document.querySelector('#multiline-text + textarea');
+      document.querySelector('#multiline-text ~ .half button')
+        .addEventListener('click', function () {
+          copyToClipboard(multilineContainer.textContent)
+        })
+    })();
+    (function () {
+      var markupContainer = document.querySelector('#multiline-markup + textarea');
+      document.querySelector('#multiline-markup ~ .half button')
+        .addEventListener('click', function () {
+          copyToClipboard(markupContainer.textContent)
+        })
+    })();
+
+  </script>
+</body>
+
+</html>

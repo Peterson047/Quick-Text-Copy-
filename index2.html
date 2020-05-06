@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Copiar-colar</title>
+  <link rel="stylesheet" href="example.css">
+
+</head>
+
+<body>
+  <h1 id="logo"><img src="/Outback-logo.png" width="200px" alt=""></h1>
+  <div id="menu">
+    <ul>
+      <li><a href="index.html">Principal</a></li>
+      <li><a href="index2.html">Contato iFood</a></li>
+      <li><a href="index3.html">Outros</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <h2 class="subtitulo" id="basic-text">Pedir Motoboy</h2>
+    <textarea disabled class="code half">Olá, me chamo XXXXX. Preciso de um novo motoboy para o pedido XXXX.    
+      </textarea>
+    <div class="half">
+      <button data-test="init-basic-text">Copiar Texto</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h2 class="subtitulo" id="multiline-text">Pedir segundo Motoboy</h2>
+    <textarea disabled class="code half">
+     Olá, me chamo XXXXX. Preciso de mais um motoboy para o pedido XXXX.
+Tenho muitos volumes e um só motoboy não consegue levar todo o pedido.
+      </textarea>
+    <div class="half">
+      <button data-test="init-multiline-text">Copiar Texto</button>
+    </div>
+  </div>
+  <hr>
+
+
+  <script src="./index.js"></script>
+  <script>
+    document.querySelector('#basic-text ~ .half button')
+      .addEventListener('click', function () {
+        copyToClipboard("Olá, me chamo XXXXX. Preciso de um novo motoboy para o pedido XXXX.")
+      });
+    (function () {
+      var multilineContainer = document.querySelector('#multiline-text + textarea');
+      document.querySelector('#multiline-text ~ .half button')
+        .addEventListener('click', function () {
+          copyToClipboard(multilineContainer.textContent)
+        })
+    })();
+    (function () {
+      var markupContainer = document.querySelector('#multiline-markup + textarea');
+      document.querySelector('#multiline-markup ~ .half button')
+        .addEventListener('click', function () {
+          copyToClipboard(markupContainer.textContent)
+        })
+    })();
+
+  </script>
+</body>
+
+</html>

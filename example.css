@@ -120,3 +120,18 @@ padding: 25px;
 font-size: 20px;
 text-transform: uppercase;
 }
+#egg {
+  margin-left: 25px;
+  font-size:12px;
+  
+}
+#egg a{
+  color: #fff;
+}
+#egg a:hover{
+  color: #000;
+}
+#form {
+
+text-align: center;
+}

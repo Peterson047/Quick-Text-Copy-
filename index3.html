@@ -15,23 +15,49 @@
       <li><a href="index.html">Principal</a></li>
       <li><a href="index2.html">Contato iFood</a></li>
       <li><a href="index3.html">Outros</a></li>
+      <li><a href="form.html">Abrir Ticket</a></li>
+
     </ul>
   </div>
   <div class="container">
-    <h2 class="subtitulo" id="basic-text">Ponto de carne</h2>
-    <textarea disabled class="code half">G'day, XXXXX. Gostaria de confirmar sua opção com relação ao ponto da carne, você já conhece os pontos dos nossos steaks?
+    <h2 class="subtitulo" id="basic-text">Pedido pronto para retirada</h2>
+    <textarea disabled class="code half">Olá! Seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)
       </textarea>
     <div class="half">
       <button data-test="init-basic-text">Copiar Texto</button>
     </div>
   </div>
   <hr>
-
+  <div class="container">
+    <h2 class="subtitulo" id="multiline-text">Ponto de carne</h2>
+    <textarea disabled class="code half">
+      G'day, XXXXX. Gostaria de confirmar sua opção com relação ao ponto da carne, você já conhece os pontos dos nossos steaks?
+       
+      </textarea>
+    <div class="half">
+      <button data-test="init-multiline-text">Copiar Texto</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <h2 class="subtitulo" id="multiline-markup">Resposta avaliacão positiva 2</h2>
+    <textarea disabled class="code half">
+      G'day, XXXXX!
+      Ficamos felizes que você gostou! :) 
+      Sempre que quiser viver um novo #MomentoOutback, lembre-se que estamos por aqui:)
+      Abraços, equipe Outback Sorocaba 😄. 
+      
+    </textarea>
+    <div class="half">
+      <button data-test="init-markup-text">Copiar texto</button>
+    </div>
+  </div>
+  <hr>
   <script src="./index.js"></script>
   <script>
     document.querySelector('#basic-text ~ .half button')
       .addEventListener('click', function () {
-        copyToClipboard("G'day, XXXXX. Gostaria de confirmar sua opção com relação ao ponto da carne, você já conhece os pontos dos nossos steaks?"")
+        copyToClipboard("Olá! Seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)")
       });
     (function () {
       var multilineContainer = document.querySelector('#multiline-text + textarea');
@@ -49,6 +75,10 @@
     })();
 
   </script>
+  <div id="egg">
+    <a href="https://www.strava.com/athletes/31965841">você Encontrou o Link secreto!</a>
+  </div>
 </body>
+
 
 </html>

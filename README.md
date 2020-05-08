@@ -5,5 +5,7 @@ Versão 0.1:
 -Adicionado o Menu principal
 -Corrigido o tamanho dos botões
 -corrgidio bug de parágrafos no final da página.
-
-Versão 
+versão 0.3
+-Corrigido alguns bugs
+-Modificados alguns títulos e inclusão de mais textos
+-Página abrir ticket adicionada pra interação com o usuário.

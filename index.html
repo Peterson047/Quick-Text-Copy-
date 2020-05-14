@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>TEXTOS OUTACK - CONTATO</title>
+  <title>TEXTOS OUTACK - PRINCIPAL</title>
   <link rel="stylesheet" href="example.css">
-
+  <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 
 <body>
   <h1 id="logo"><img src="/Outback-logo.png" width="200px" alt=""></h1>
+  <div id="peter">Project by <a target="_blank" href="https://peterson047.github.io/portfolio/">Peterson Alves</a></div>
   <div id="menu">
     <ul>
       <li><a href="index.html">Principal</a></li>
@@ -20,7 +21,7 @@
   </div>
   <div class="container">
     <h2 class="subtitulo" id="basic-text">Mensagem Pedido enviado</h2>
-    <textarea disabled class="code half">G'day XXX! O seu pedido já saiu para entrega. aproveite o seu #MomentoOutback e aguardamos a sua avaliação 5 estrelas! Obrigado, Time Delivery!😄
+    <textarea disabled class="code half">G'day XXX! O seu pedido já saiu para entrega. Aproveite o seu #MomentoOutback e aguardamos a sua avaliação 5 estrelas! Obrigado, Time Delivery!😄
       </textarea>
     <div class="half">
       <button data-test="init-basic-text">Copiar Texto</button>
@@ -58,7 +59,7 @@
   <script>
     document.querySelector('#basic-text ~ .half button')
       .addEventListener('click', function () {
-        copyToClipboard("G'day XXX! O seu pedido já saiu para entrega. aproveite o seu #MomentoOutback e aguardamos a sua avaliação 5 estrelas! Obrigado, Time Delivery!😄")
+        copyToClipboard("G'day XXX! O seu pedido já saiu para entrega. Aproveite o seu #MomentoOutback e aguardamos a sua avaliação 5 estrelas! Obrigado, Time Delivery!😄")
       });
     (function () {
       var multilineContainer = document.querySelector('#multiline-text + textarea');
@@ -76,9 +77,11 @@
     })();
 
   </script>
+
   <div id="egg">
     <a href="https://peterson047.github.io/portfolio/" target="_blank">você Encontrou o Link secreto!</a>
   </div>
+
 </body>
 
 

@@ -58,6 +58,7 @@ border-radius: 5px;
  color: #000;
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*BOTAO*/
 button{
  margin-top: 3px;
   margin-left: 93%;
@@ -77,6 +78,7 @@ button:hover{
   
 
 }
+/*MENU*/
 #menu ul{
   background-color: #683205;
   text-align: center;
@@ -121,6 +123,7 @@ padding: 25px;
 font-size: 20px;
 text-transform: uppercase;
 }
+/*EASTER EGG*/
 #egg {
   margin-left: 25px;
   font-size:12px;
@@ -146,9 +149,23 @@ button {
   border-radius: 15px;
   box-shadow: 0 3px #999;
 }
-
-
 button:active {  
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+/* LINK PROJECT BY*/
+#peter{
+  float: right;
+  margin-right: 5px;
+  margin-top: 30px;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+#peter a{
+  color: #999;
+  text-decoration: none;
+}
+#peter a:hover{
+  color: #fff;
 }

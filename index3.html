@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <title>TEXTOS OUTBACK - OUTROS</title>
   <link rel="stylesheet" href="example.css">
-
+  <link rel="icon" type="image/png" href="favicon.ico" />
 </head>
 
 <body>
   <h1 id="logo"><img src="/Outback-logo.png" width="200px" alt=""></h1>
+  <div id="peter">Project by <a target="_blank" href="https://peterson047.github.io/portfolio/">Peterson Alves</a></div>
   <div id="menu">
     <ul>
       <li><a href="index.html">Principal</a></li>
@@ -20,8 +21,8 @@
     </ul>
   </div>
   <div class="container">
-    <h2 class="subtitulo" id="basic-text">Retirada de pedido 2</h2>
-    <textarea disabled class="code half">Olá! Seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)
+    <h2 class="subtitulo" id="basic-text">Retirada de pedido 1</h2>
+    <textarea disabled class="code half">Olá! o seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)
       </textarea>
     <div class="half">
       <button data-test="init-basic-text">Copiar Texto</button>
@@ -32,7 +33,7 @@
     <h2 class="subtitulo" id="multiline-text">Retirada de pedido 2</h2>
     <textarea disabled class="code half">
 
-        G'day XXX! O seu pedido está pronto para retirada! Por favor se dirigir a porta branca no fundo do restaurante e tocar o interfone do Ifood! Obrigado, Time Delivery :)😄
+        G'day XXX! O seu pedido está pronto para retirada! Por favor se dirigir a porta branca no fundo do restaurante e tocar o interfone do Ifood! Obrigado, Time Delivery 😄
       </textarea>
     <div class="half">
       <button data-test="init-multiline-text">Copiar Texto</button>
@@ -55,7 +56,7 @@
   <script>
     document.querySelector('#basic-text ~ .half button')
       .addEventListener('click', function () {
-        copyToClipboard("Olá! Seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)")
+        copyToClipboard("Olá! O seu pedido está pronto para retirada! Se direcione até os fundos da loja para retirar seu pedido. (Porta branca com interfone ao lado)")
       });
     (function () {
       var multilineContainer = document.querySelector('#multiline-text + textarea');

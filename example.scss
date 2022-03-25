@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl,
+dt, dd, blockquote, address {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+}
+.half:first-child {
+  padding-left: 20px;
+}
+.half:last-child {
+  padding-right: 0px;
+}
+@media screen and (max-width: 568px) {
+  .half {
+    width: 100% !important;
+    padding-left: 0px;
+    padding-right: 20px;
+    margin-left: 100%;
+  }
+}
+
+.half {
+  width: 50%;
+  float: left;
+  padding: px;
+}
+.code {
+  font-size: 18px;
+  min-height: 155px;
+  background-color: #d6d6d6;
+  
+}
+#logo {
+  margin-top: 5px;
+  margin-bottom: 15px;
+ text-align: center;
+}
+
+.subtitulo{
+  margin-top: 15px;
+  font-family: 'Karla', sans-serif;
+  background-color: #0054b4;
+  color: rgb(241, 241, 241);
+  text-align: center;
+  width: 50%;
+ margin-left: 25%;
+ border-radius: 5px;
+ font-weight: 500;
+}
+textarea{
+ text-align: center;
+ margin-left: 25%;
+ margin-top: 10px;
+border-radius: 5px;
+ color: #000;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*BOTAO*/
+button{
+ margin-top: 3px;
+  margin-left: 93%;
+  
+  border-radius: 5px;
+  background-color: #11092ef3;
+  color: #fff;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  text-transform: uppercase;
+}
+button:hover{
+  background-color: #1e6cd3;
+  color: #000000;
+  
+  
+
+}
+/*MENU*/
+#menu ul{
+  background-color: #0054b4;
+  text-align: center;
+  padding: 10px;
+  
+}
+#menu ul li{
+  display: inline;
+  background-color: #062d5a;
+  padding: 13px;
+  border-radius: 5px;
+  border:1px #fff solid ;
+  
+  
+}
+#menu ul li a{
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+font-weight: 200;
+text-decoration: none;
+padding: 25px;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+
+#menu ul li:hover{
+  display: inline;
+  background-color: #fcd3aa;
+  padding: 13px;
+  border-radius: 5px;
+  border:1px #fff solid ;
+  
+  
+}
+#menu ul li a:hover{
+  color: #000;
+  font-family: 'Rubik', sans-serif;
+font-weight: 500;
+text-decoration: none;
+padding: 25px;
+font-size: 20px;
+text-transform: uppercase;
+}
+/*EASTER EGG*/
+#egg {
+  margin-left: 25px;
+  font-size:12px;
+  
+}
+#egg a{
+  color: #fff;
+}
+#egg a:hover{
+  color: #000;
+}
+#form {
+
+text-align: center;
+}
+
+/*efeitos botao*/
+button {
+  text-align: center;
+  cursor: pointer;
+  outline: none;  
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+button:active {  
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* LINK PROJECT BY*/
+#peter{
+  float: right;
+  margin-right: 5px;
+  margin-top: 30px;
+  color: #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+#peter a{
+  color: #999;
+  text-decoration: none;
+}
+#peter a:hover{
+  color: #fff;
+}
